@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flussa · Automazione dei processi aziendali con l'AI per le PMI italiane</title>
+  <meta name="description" content="Flussa costruisce sistemi AI su misura che automatizzano email, fatture, documenti, Excel e gestionali. Ci integriamo con gli strumenti che usi già. Prenota una call gratuita di 30 minuti.">
+  <link rel="canonical" href="https://m4ttifum4.github.io/flussa/">
+  <meta name="theme-color" content="#1D2CF3">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Flussa">
+  <meta property="og:title" content="Flussa · Il lavoro della tua azienda, finalmente automatico">
+  <meta property="og:description" content="Sistemi AI su misura che collegano i tuoi strumenti e fanno girare da soli i processi ripetitivi.">
+  <meta property="og:url" content="https://m4ttifum4.github.io/flussa/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Flussa",
+    "url": "https://m4ttifum4.github.io/flussa/",
+    "description": "Automazione dei processi aziendali e agenti AI su misura per piccole e medie imprese italiane.",
+    "email": "ciao@flussa.it",
+    "telephone": "+39 000 000 0000",
+    "areaServed": {"@type": "Country", "name": "Italia"},
+    "founder": [{"@type": "Person", "name": "Giuliano Murada", "jobTitle": "Consulenza"}, {"@type": "Person", "name": "Mattia Fumagalli", "jobTitle": "Sviluppo tecnico"}],
+    "knowsAbout": ["Automazione processi aziendali", "Agenti AI", "Intelligenza artificiale per PMI", "Integrazione gestionali", "Automazione fatture"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "In quanto tempo è pronta la prima automazione?", "acceptedAnswer": {"@type": "Answer", "text": "Per un singolo processo, come la registrazione delle fatture o lo smistamento delle email, di solito servono dalle 2 alle 4 settimane, test compresi."}},
+      {"@type": "Question", "name": "Devo cambiare i programmi che uso?", "acceptedAnswer": {"@type": "Answer", "text": "No. Ci colleghiamo a gestionale, email, Excel, CRM e agli altri strumenti che usate già."}},
+      {"@type": "Question", "name": "I miei dati sono al sicuro?", "acceptedAnswer": {"@type": "Answer", "text": "Lavoriamo nel rispetto del GDPR, con accessi limitati ai soli dati necessari e fornitori con server in Unione Europea quando possibile. Firmiamo un accordo sul trattamento dei dati."}},
+      {"@type": "Question", "name": "Lavorate in tutta Italia?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Lavoriamo da remoto con aziende di tutta Italia e, quando serve, veniamo in sede per l'analisi iniziale."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Icone -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-sheet" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11.5l2-8H6.2"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- HEADER -->
+  <header class="header" id="top">
+    <div class="wrap header__in">
+      <a href="#top" class="logo" aria-label="Flussa, torna all'inizio">flussa<span class="logo__dot"></span></a>
+      <div class="header__actions">
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span> Menu</button>
+        <a href="#prenota" class="btn btn--blue btn--sm">Prenota una call <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU OVERLAY -->
+  <nav class="menu" id="menu" aria-label="Menu principale" hidden>
+    <div class="wrap menu__in">
+      <a href="#cosa-facciamo">Cosa facciamo</a>
+      <a href="#team">Chi siamo</a>
+      <a href="#metodo">Come lavoriamo</a>
+      <a href="#casi">Esempi</a>
+      <a href="#faq">Domande frequenti</a>
+      <a href="#prenota" class="menu__cta">Prenota una call gratuita <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__copy">
+        <p class="hero__kicker"><span class="pulse"></span> Automazione AI per PMI in tutta Italia</p>
+        <h1>Il lavoro della tua azienda,<br><em>finalmente</em> automatico.</h1>
+        <p class="hero__lead">Costruiamo sistemi AI su misura che collegano i tuoi strumenti e fanno girare da soli i processi ripetitivi. Tu ti occupi di far crescere l'azienda.</p>
+        <div class="hero__ctas">
+          <a href="#prenota" class="btn btn--blue">Prenota una call gratuita <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a href="#casi" class="btn btn--line">Guarda cosa automatizziamo</a>
+        </div>
+      </div>
+
+      <!-- Mockup flottanti -->
+      <div class="stage" aria-hidden="true">
+        <div class="mock mock--invoice">
+          <div class="mock__bar"><span></span><span></span><span></span><b>Fatture in arrivo</b></div>
+          <div class="inv">
+            <div class="inv__row"><span class="inv__doc">PDF</span><div><strong>Fornitore Rossi S.r.l.</strong><small>€ 1.240,00 · scad. 30/11</small></div><span class="tag tag--ok">Registrata</span></div>
+            <div class="inv__row"><span class="inv__doc">PDF</span><div><strong>Bianchi Trasporti</strong><small>€ 386,50 · scad. 15/11</small></div><span class="tag tag--ok">Registrata</span></div>
+            <div class="inv__row"><span class="inv__doc">XML</span><div><strong>Energia Nord S.p.A.</strong><small>€ 912,20 · scad. 05/12</small></div><span class="tag tag--run">In lettura…</span></div>
+          </div>
+        </div>
+
+        <div class="mock mock--main">
+          <div class="mock__bar"><span></span><span></span><span></span><b>Flussa · Pannello</b></div>
+          <div class="dash">
+            <div class="dash__kpis">
+              <div><small>Attività automatizzate</small><strong data-count="1284">0</strong></div>
+              <div><small>Ore risparmiate (mese)</small><strong class="kpi-blue" data-count="96">0</strong></div>
+              <div><small>Errori manuali</small><strong>0</strong></div>
+            </div>
+            <div class="dash__chart">
+              <svg viewBox="0 0 300 90" preserveAspectRatio="none"><path class="chart-area" d="M0 80 L30 72 L60 74 L90 60 L120 62 L150 46 L180 48 L210 32 L240 30 L270 18 L300 12 L300 90 L0 90Z"/><path class="chart-line" d="M0 80 L30 72 L60 74 L90 60 L120 62 L150 46 L180 48 L210 32 L240 30 L270 18 L300 12"/></svg>
+            </div>
+            <ul class="dash__flows">
+              <li><svg class="ic"><use href="#i-mail"/></svg> Smistamento email <span class="on">attivo</span></li>
+              <li><svg class="ic"><use href="#i-file"/></svg> Registrazione fatture <span class="on">attivo</span></li>
+              <li><svg class="ic"><use href="#i-sheet"/></svg> Report settimanale <span class="on">attivo</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mock mock--cal">
+          <div class="cal__head"><span class="cal__day">24</span><div><b>Ottobre</b><small>3 appuntamenti</small></div></div>
+          <div class="cal__item"><i></i>09:30 · Sopralluogo cliente</div>
+          <div class="cal__item"><i class="b"></i>11:00 · Call fornitore</div>
+          <div class="cal__item"><i></i>15:00 · Consegna ordine</div>
+          <div class="cal__note"><svg class="ic"><use href="#i-check"/></svg> Promemoria inviati</div>
+        </div>
+
+        <div class="mock mock--chat">
+          <div class="chat__head"><span class="chat__av">F</span><div><b>Assistente</b><small>online</small></div></div>
+          <div class="bubble bubble--in">Ciao! Il mio ordine è già partito?</div>
+          <div class="bubble bubble--out">Sì 🙂 È stato spedito ieri, arriva giovedì. Ecco il tracking.</div>
+          <div class="typing"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+
+      <!-- Ticker casi d'uso -->
+      <div class="ticker" aria-label="Esempi di automazioni">
+        <div class="ticker__track">
+          <span>Fatture registrate in automatico</span><span>Email smistate e risposte</span><span>Excel aggiornati da soli</span><span>Preventivi in 5 minuti</span><span>Assistente WhatsApp</span><span>Report pronti ogni lunedì</span><span>Ordini inseriti nel gestionale</span><span>Appuntamenti e promemoria</span>
+          <span aria-hidden="true">Fatture registrate in automatico</span><span aria-hidden="true">Email smistate e risposte</span><span aria-hidden="true">Excel aggiornati da soli</span><span aria-hidden="true">Preventivi in 5 minuti</span><span aria-hidden="true">Assistente WhatsApp</span><span aria-hidden="true">Report pronti ogni lunedì</span><span aria-hidden="true">Ordini inseriti nel gestionale</span><span aria-hidden="true">Appuntamenti e promemoria</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFESTO (testo che si rivela allo scroll) -->
+    <section class="manifesto">
+      <div class="wrap">
+        <p class="reveal-text" data-reveal>
+          Ogni settimana il tuo team spende ore a copiare dati, rispondere alle stesse email e rincorrere file Excel.
+        </p>
+        <p class="reveal-text" data-reveal>
+          Non è colpa delle persone. È che i tuoi strumenti <em>non parlano tra loro.</em>
+        </p>
+        <p class="reveal-text reveal-text--blue" data-reveal>
+          Flussa li fa lavorare insieme.
+        </p>
+      </div>
+    </section>
+
+    <!-- COSA FACCIAMO -->
+    <section class="blue" id="cosa-facciamo">
+      <div class="blue__grid" aria-hidden="true"></div>
+      <svg class="thread" viewBox="0 0 200 2400" preserveAspectRatio="none" aria-hidden="true"><path id="thread-path" d="M100 0 C 20 200, 180 380, 100 600 S 20 1000, 100 1200 S 180 1600, 100 1800 S 30 2200, 100 2400"/></svg>
+      <div class="wrap blue__in">
+        <p class="blue__eyebrow">Cosa facciamo</p>
+
+        <div class="pb">
+          <div class="pb__col fade">
+            <h2 class="pb__title">Il <em>problema</em></h2>
+            <ul class="pb__list">
+              <li><svg class="ic"><use href="#i-x"/></svg> Attività ripetitive ancora fatte a mano</li>
+              <li><svg class="ic"><use href="#i-x"/></svg> Programmi che non si scambiano i dati</li>
+              <li><svg class="ic"><use href="#i-x"/></svg> Tempi lunghi e passaggi inutili</li>
+              <li><svg class="ic"><use href="#i-x"/></svg> Errori di battitura che costano caro</li>
+            </ul>
+          </div>
+          <div class="pb__col fade">
+            <h2 class="pb__title">La <em>soluzione</em></h2>
+            <p>Un sistema AI costruito sulla tua azienda: legge email e documenti, capisce cosa contengono e fa il passaggio successivo al posto vostro.</p>
+            <p>Non devi buttare via niente. Ci agganciamo agli strumenti che usi oggi e li rendiamo più intelligenti.</p>
+          </div>
+        </div>
+
+        <div class="integr fade">
+          <p class="integr__q"><em>Con cosa?</em></p>
+          <h2 class="integr__title">Ci colleghiamo a tutto</h2>
+          <ul class="integr__list">
+            <li><svg class="ic"><use href="#i-db"/></svg> Gestionali ed ERP</li>
+            <li><svg class="ic"><use href="#i-mail"/></svg> Email e PEC</li>
+            <li><svg class="ic"><use href="#i-sheet"/></svg> Excel e Google Sheets</li>
+            <li><svg class="ic"><use href="#i-users"/></svg> CRM</li>
+            <li><svg class="ic"><use href="#i-file"/></svg> PDF e documenti</li>
+            <li><svg class="ic"><use href="#i-chat"/></svg> WhatsApp</li>
+            <li><svg class="ic"><use href="#i-cart"/></svg> E-commerce</li>
+            <li><svg class="ic"><use href="#i-cal"/></svg> Calendari</li>
+          </ul>
+        </div>
+
+        <div class="results">
+          <p class="integr__q fade"><em>Il risultato?</em></p>
+          <div class="results__grid">
+            <article class="res fade">
+              <h3>Processi che girano da soli</h3>
+              <p>I dati passano da un programma all'altro senza che nessuno debba <em>copiarli a mano.</em></p>
+            </article>
+            <article class="res fade">
+              <h3>Un team più sereno</h3>
+              <p>Meno lavoro meccanico, più spazio per clienti, idee e <em>decisioni che contano.</em></p>
+            </article>
+            <article class="res fade">
+              <h3>Niente più sviste</h3>
+              <p>Un sistema non si distrae alle sei di sera: <em>importi, codici e scadenze</em> sempre giusti.</p>
+            </article>
+            <article class="res fade">
+              <h3>Ore che tornano a te</h3>
+              <p>Il tempo recuperato si sposta dove crea valore: <em>vendere, seguire, crescere.</em></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+      <div class="wrap">
+        <h2 class="big-title fade">Un team <em>giovane</em><br>che porta l'AI nelle PMI</h2>
+        <p class="team__lead fade">Abbiamo scelto di partire adesso perché l'intelligenza artificiale sta cambiando il modo di lavorare, e le aziende che si muovono per prime avranno un vantaggio per anni. Vogliamo che quel vantaggio ce l'abbiano anche le piccole e medie imprese italiane, non solo le grandi.</p>
+        <div class="team__grid">
+          <article class="person fade">
+            <div class="person__av">GM</div>
+            <h3>Giuliano Murada</h3>
+            <p class="person__role">Consulenza</p>
+            <p>Analizza con te come lavora la tua azienda, individua cosa automatizzare e ti segue in ogni fase del progetto. È il tuo riferimento diretto.</p>
+          </article>
+          <article class="person fade">
+            <div class="person__av person__av--blue">MF</div>
+            <h3>Mattia Fumagalli</h3>
+            <p class="person__role">Sviluppo tecnico</p>
+            <p>Progetta e costruisce i sistemi AI, li collega ai tuoi strumenti e li tiene aggiornati nel tempo.</p>
+          </article>
+        </div>
+        <div class="team__social fade">
+          <a href="#" class="chip"><svg class="ic"><use href="#i-insta"/></svg> Seguici su Instagram</a>
+          <a href="#" class="chip"><svg class="ic"><use href="#i-linkedin"/></svg> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODO -->
+    <section class="method" id="metodo">
+      <div class="wrap">
+        <h2 class="big-title fade">Come <em>lavoriamo</em></h2>
+        <p class="sub fade">Quattro fasi, dalla prima chiacchierata a un sistema che migliora con l'uso.</p>
+
+        <div class="stepper fade">
+          <div class="stepper__tabs" role="tablist">
+            <button role="tab" aria-selected="true" data-step="0"><span>1</span> Ascoltiamo</button>
+            <button role="tab" aria-selected="false" data-step="1"><span>2</span> Costruiamo</button>
+            <button role="tab" aria-selected="false" data-step="2"><span>3</span> Colleghiamo</button>
+            <button role="tab" aria-selected="false" data-step="3"><span>4</span> Seguiamo</button>
+          </div>
+          <div class="stepper__panels">
+            <div class="panel is-active" role="tabpanel">
+              <h3><em>1.</em> Ascoltiamo</h3>
+              <p>Passiamo del tempo con chi fa il lavoro ogni giorno, in sede o in videochiamata. Mappiamo i passaggi uno per uno e troviamo quelli che <em>bruciano più ore.</em></p>
+              <p>Alla fine ricevi una proposta chiara: cosa automatizzare, quanto tempo risparmi, quanto costa.</p>
+            </div>
+            <div class="panel" role="tabpanel">
+              <h3><em>2.</em> Costruiamo</h3>
+              <p>Sviluppiamo la soluzione AI su misura per il tuo processo, partendo da quello che rende di più.</p>
+              <p>Ti mostriamo i progressi mentre lavoriamo, così vedi <em>subito</em> come funzionerà.</p>
+            </div>
+            <div class="panel" role="tabpanel">
+              <h3><em>3.</em> Colleghiamo</h3>
+              <p>Integriamo il sistema con gestionale, email, fogli di calcolo e tutto ciò che usate già. Nessuno deve imparare un nuovo programma.</p>
+              <p>Lo proviamo su casi reali e lo sistemiamo finché non funziona <em>esattamente</em> come serve.</p>
+            </div>
+            <div class="panel" role="tabpanel">
+              <h3><em>4.</em> Seguiamo</h3>
+              <p>Dopo la consegna restiamo con te: controlliamo che tutto giri, lo miglioriamo sui dati reali e ti proponiamo nuove automazioni quando sei pronto.</p>
+              <p>L'AI cambia in fretta: stare al passo è <em>compito nostro</em>, non tuo.</p>
+            </div>
+          </div>
+          <div class="stepper__nav">
+            <button class="round" data-dir="-1" aria-label="Fase precedente"><svg class="ic"><use href="#i-left"/></svg></button>
+            <div class="stepper__bar"><span></span></div>
+            <button class="round" data-dir="1" aria-label="Fase successiva"><svg class="ic"><use href="#i-right"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASI -->
+    <section class="cases" id="casi">
+      <div class="wrap">
+        <h2 class="big-title fade">Cosa possiamo <em>automatizzare</em></h2>
+        <p class="sub fade">Alcuni esempi di sistemi che costruiamo. Ogni azienda è diversa: partiamo sempre dal tuo modo di lavorare.</p>
+        <div class="cases__grid">
+          <article class="case fade">
+            <div class="case__vis case__vis--inv">
+              <div class="mini-row"><b>PDF</b><span></span><em>✓</em></div>
+              <div class="mini-row"><b>PDF</b><span></span><em>✓</em></div>
+              <div class="mini-row"><b>XML</b><span></span><em>✓</em></div>
+            </div>
+            <span class="case__cat">Amministrazione</span>
+            <h3>Fatture che si registrano da sole</h3>
+            <p>L'AI legge fatture e documenti, estrae importi e scadenze e li inserisce nel gestionale.</p>
+          </article>
+          <article class="case fade">
+            <div class="case__vis case__vis--mail">
+              <div class="mail-tag a">Ordini</div><div class="mail-tag b">Preventivi</div><div class="mail-tag c">Assistenza</div><div class="mail-tag d">Spam</div>
+            </div>
+            <span class="case__cat">Email</span>
+            <h3>La casella che si smista da sola</h3>
+            <p>Le email vengono lette, classificate, girate alla persona giusta o risposte in automatico.</p>
+          </article>
+          <article class="case fade">
+            <div class="case__vis case__vis--chat">
+              <div class="bubble bubble--in sm">Avete posto sabato per 4?</div>
+              <div class="bubble bubble--out sm">Sì! Ti ho prenotato alle 20:30 ✓</div>
+            </div>
+            <span class="case__cat">Clienti</span>
+            <h3>Un assistente sempre disponibile</h3>
+            <p>Su WhatsApp o sul sito risponde alle domande frequenti, prende prenotazioni e passa a voi i casi delicati.</p>
+          </article>
+          <article class="case fade">
+            <div class="case__vis case__vis--rep">
+              <div class="bars"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:80%"></i><i style="--h:72%"></i><i style="--h:95%"></i></div>
+            </div>
+            <span class="case__cat">Direzione</span>
+            <h3>Report pronti ogni lunedì</h3>
+            <p>I numeri di vendite, ordini e magazzino raccolti da più fonti e riassunti in una mail chiara.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-sec" id="prenota">
+      <div class="wrap">
+        <div class="cta">
+          <div class="blue__grid" aria-hidden="true"></div>
+          <div class="cta__copy">
+            <h2>Quanto vale un'ora<br>del tuo team? <em>Recuperiamola.</em></h2>
+            <p>Prenota una call gratuita di 30 minuti: ci racconti come lavorate e ti diciamo con onestà cosa si può automatizzare e quanto tempo risparmieresti.</p>
+          </div>
+          <form class="cta__form" id="lead-form" action="" method="POST" novalidate>
+            <div class="row">
+              <input name="nome" type="text" placeholder="Nome e cognome" autocomplete="name" required aria-label="Nome e cognome">
+              <input name="azienda" type="text" placeholder="Azienda" autocomplete="organization" aria-label="Azienda">
+            </div>
+            <div class="row">
+              <input name="email" type="email" placeholder="Email" autocomplete="email" required aria-label="Email">
+              <input name="telefono" type="tel" placeholder="Telefono" autocomplete="tel" aria-label="Telefono">
+            </div>
+            <textarea name="messaggio" rows="3" placeholder="Quale attività vi fa perdere più tempo?" aria-label="Quale attività vi fa perdere più tempo?"></textarea>
+            <label class="consent"><input type="checkbox" name="privacy" required> <span>Acconsento al trattamento dei dati secondo la <a href="#">privacy policy</a>.</span></label>
+            <button type="submit" class="btn btn--white">Prenota la call gratuita <svg class="ic"><use href="#i-arrow"/></svg></button>
+            <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="wrap wrap--narrow">
+        <h2 class="big-title fade">Domande <em>frequenti</em></h2>
+        <p class="sub fade">Non trovi la tua domanda? Chiedicela in call, la prima è gratuita.</p>
+        <div class="faq__list fade">
+          <details><summary>In quanto tempo è pronta la prima automazione?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Per un singolo processo, come la registrazione delle fatture o lo smistamento delle email, di solito servono dalle 2 alle 4 settimane, test compresi. Progetti più ampi vengono divisi in fasi, così inizi a risparmiare tempo subito.</p></details>
+          <details><summary>Come si svolge il lavoro insieme?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Una prima call gratuita, poi un'analisi del processo con le persone che lo svolgono. Ricevi una proposta con costi e tempi chiari e, se la approvi, partiamo con lo sviluppo.</p></details>
+          <details><summary>Posso vedere i progressi durante lo sviluppo?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì. Ti mostriamo il sistema mentre lo costruiamo e raccogliamo i tuoi commenti a ogni passaggio. Niente sorprese alla consegna.</p></details>
+          <details><summary>Devo cambiare i programmi che uso?<svg class="ic"><use href="#i-plus"/></svg></summary><p>No. Ci colleghiamo a gestionale, email, Excel, CRM e agli altri strumenti che usate già. Se un programma non permette collegamenti diretti, troviamo comunque un modo per scambiare i dati.</p></details>
+          <details><summary>Che tecnologie usate?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Usiamo i modelli di intelligenza artificiale più affidabili sul mercato, insieme a strumenti di automazione e integrazione consolidati. Scegliamo di volta in volta quello che dà il miglior rapporto tra risultato, costo e sicurezza per il tuo caso.</p></details>
+          <details><summary>I miei dati sono al sicuro? E il GDPR?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Lavoriamo nel rispetto del GDPR: accessi limitati ai soli dati necessari, fornitori con server in Unione Europea quando possibile e un accordo scritto sul trattamento dei dati. Le operazioni delicate possono sempre richiedere la tua approvazione.</p></details>
+          <details><summary>Il sistema resta di mia proprietà?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì, il sistema costruito per la tua azienda è tuo. Ti consegniamo accessi e documentazione, così non dipendi da noi per sempre.</p></details>
+          <details><summary>Cosa succede dopo la consegna?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Offriamo assistenza e manutenzione: controlliamo che tutto funzioni, interveniamo se qualcosa cambia nei tuoi programmi e miglioriamo il sistema nel tempo.</p></details>
+          <details><summary>Lavorate in tutta Italia?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì. Lavoriamo da remoto con aziende di tutta Italia e, quando serve, veniamo in sede per l'analisi iniziale.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__big">Lascia che il lavoro <em>scorra.</em></p>
+      <div class="footer__row">
+        <div>
+          <a href="#top" class="logo logo--light">flussa<span class="logo__dot"></span></a>
+          <p class="footer__claim">Automazione dei processi aziendali con l'AI per le PMI italiane.</p>
+        </div>
+        <div class="footer__contacts">
+          <p><span>Telefono</span><a href="tel:+390000000000">+39 000 000 0000</a></p>
+          <p><span>Email</span><a href="mailto:ciao@flussa.it">ciao@flussa.it</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Flussa · P. IVA 00000000000</p>
+        <p><a href="#">Privacy Policy</a> · <a href="#">Cookie Policy</a> · <a href="#">Termini di servizio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notifica -->
+  <aside class="toast" id="toast" role="dialog" aria-label="Messaggio dal team Flussa" hidden>
+    <span class="toast__av">f<i></i></span>
+    <div class="toast__body">
+      <strong>Team Flussa</strong>
+      <p>In 30 minuti ti mostriamo cosa puoi automatizzare nella tua azienda.</p>
+    </div>
+    <div class="toast__actions">
+      <button class="toast__close" aria-label="Chiudi la notifica"><svg class="ic"><use href="#i-x"/></svg></button>
+      <a href="#prenota" class="toast__go" aria-label="Prenota una call"><svg class="ic"><use href="#i-check"/></svg></a>
+    </div>
+  </aside>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://m4ttifum4.github.io/flussa/sitemap.xml
