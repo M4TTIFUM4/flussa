@@ -1,4 +1,4 @@
-/* Flussa — landing page */
+/* FlussAI — landing page */
 :root {
   --bg: #F4F4F1;
   --card: #FFFFFF;
@@ -46,9 +46,10 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 .header.is-scrolled { background: rgba(244,244,241,.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--line); }
 .header__in { height: 72px; display: flex; align-items: center; justify-content: space-between; }
 .logo { font-weight: 800; font-size: 1.55rem; letter-spacing: -.05em; color: var(--blue); text-decoration: none; display: inline-flex; align-items: flex-end; }
-.logo__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--blue); margin: 0 0 7px 2px; }
+.logo { align-items: center; }
+.logo__ai { margin-left: 2px; padding: 1px 7px 2px; border-radius: 8px; background: var(--blue); color: #fff; font-size: .78em; letter-spacing: -.02em; line-height: 1.25; }
 .logo--light { color: #fff; }
-.logo--light .logo__dot { background: #fff; }
+.logo--light .logo__ai { background: #fff; color: var(--blue); }
 .header__actions { display: flex; align-items: center; gap: 14px; }
 .menu-btn { display: inline-flex; align-items: center; gap: 9px; background: none; border: 0; cursor: pointer; font-weight: 500; font-size: .95rem; padding: 8px 6px; }
 .menu-btn__lines { display: inline-flex; flex-direction: column; gap: 4px; width: 16px; }

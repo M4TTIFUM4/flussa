@@ -1,4 +1,4 @@
-/* Flussa — interazioni */
+/* FlussAI — interazioni */
 (function () {
   "use strict";
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -130,7 +130,7 @@
      Senza endpoint si apre il client email precompilato. */
   var form = document.getElementById("lead-form");
   var msg = document.getElementById("form-msg");
-  var EMAIL = "ciao@flussa.it";
+  var EMAIL = "ciao@flussai.it";
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var ok = true;
