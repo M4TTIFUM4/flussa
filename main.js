@@ -125,12 +125,10 @@
   toast.querySelector(".toast__close").addEventListener("click", hideToast);
   toast.querySelector(".toast__go").addEventListener("click", hideToast);
 
-  /* Modulo
-     Per ricevere le richieste: inserire un endpoint (es. Formspree) nell'attributo action del form.
-     Senza endpoint si apre il client email precompilato. */
+  /* Modulo: invio tramite l'endpoint indicato in action; senza endpoint si apre il client email. */
   var form = document.getElementById("lead-form");
   var msg = document.getElementById("form-msg");
-  var EMAIL = "ciao@flussai.it";
+  var EMAIL = "info@officinaquantica.it";
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var ok = true;
@@ -145,8 +143,8 @@
     var action = form.getAttribute("action");
     if (action) {
       msg.textContent = "Invio in corso…";
-      fetch(action, { method: "POST", body: data, headers: { Accept: "application/json" } })
-        .then(function (r) { if (!r.ok) throw 0; form.reset(); msg.textContent = "Grazie! Ti contattiamo entro 24 ore per fissare la call."; })
+      fetch(action, { method: "POST", body: JSON.stringify(Object.fromEntries(data)), headers: { "Content-Type": "application/json", Accept: "application/json" } })
+        .then(function (r) { if (!r.ok) throw 0; form.reset(); msg.textContent = "Grazie! Ti ricontattiamo al più presto per fissare la call."; })
         .catch(function () { msg.textContent = "Qualcosa è andato storto. Scrivici a " + EMAIL; });
     } else {
       var body = "Nome: " + data.get("nome") + "\nAzienda: " + (data.get("azienda") || "-") + "\nEmail: " + data.get("email") +

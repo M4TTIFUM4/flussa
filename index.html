@@ -5,25 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FlussAI · Automazione dei processi aziendali con l'AI per le PMI italiane</title>
   <meta name="description" content="FlussAI costruisce sistemi AI su misura che automatizzano email, fatture, documenti, Excel e gestionali. Ci integriamo con gli strumenti che usi già. Prenota una call gratuita di 30 minuti.">
-  <link rel="canonical" href="https://m4ttifum4.github.io/flussa/">
+  <link rel="canonical" href="https://flussai.officinaquantica.it/">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1D4ED8">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="FlussAI">
   <meta property="og:title" content="FlussAI · Il lavoro della tua azienda, finalmente automatico">
   <meta property="og:description" content="Sistemi AI su misura che collegano i tuoi strumenti e fanno girare da soli i processi ripetitivi.">
-  <meta property="og:url" content="https://m4ttifum4.github.io/flussa/">
-  <meta property="og:image" content="https://m4ttifum4.github.io/flussa/og-image.jpg">
+  <meta property="og:url" content="https://flussai.officinaquantica.it/">
+  <meta property="og:image" content="https://flussai.officinaquantica.it/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="FlussAI: il lavoro della tua azienda, finalmente automatico">
-  <meta name="twitter:image" content="https://m4ttifum4.github.io/flussa/og-image.jpg">
+  <meta name="twitter:image" content="https://flussai.officinaquantica.it/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="favicon.ico" sizes="48x48">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon-96x96.png" type="image/png" sizes="96x96">
-  <link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,15 +34,33 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "FlussAI",
-    "url": "https://m4ttifum4.github.io/flussa/",
-    "description": "Automazione dei processi aziendali e agenti AI su misura per piccole e medie imprese italiane.",
-    "email": "ciao@flussai.it",
-    "telephone": "+39 000 000 0000",
-    "areaServed": {"@type": "Country", "name": "Italia"},
-    "founder": [{"@type": "Person", "name": "Giuliano Murada", "jobTitle": "Consulenza"}, {"@type": "Person", "name": "Mattia Fumagalli", "jobTitle": "Sviluppo tecnico"}],
-    "knowsAbout": ["Automazione processi aziendali", "Agenti AI", "Intelligenza artificiale per PMI", "Integrazione gestionali", "Automazione fatture"]
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://flussai.officinaquantica.it/#sito",
+        "url": "https://flussai.officinaquantica.it/",
+        "name": "FlussAI",
+        "alternateName": ["Fluss AI", "fluss.ai"],
+        "inLanguage": "it-IT",
+        "publisher": {"@id": "https://flussai.officinaquantica.it/#azienda"}
+      },
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://flussai.officinaquantica.it/#azienda",
+        "name": "FlussAI",
+        "url": "https://flussai.officinaquantica.it/",
+        "logo": {"@type": "ImageObject", "url": "https://flussai.officinaquantica.it/icon-512.png", "width": 512, "height": 512},
+        "image": "https://flussai.officinaquantica.it/og-image.jpg",
+        "description": "Automazione dei processi aziendali e agenti AI su misura per piccole e medie imprese italiane.",
+        "email": "info@officinaquantica.it",
+        "telephone": "+39 351 507 3173",
+        "vatID": "IT01009390145",
+        "address": {"@type": "PostalAddress", "streetAddress": "Largo Valorsa", "addressLocality": "Sondrio", "postalCode": "23100", "addressRegion": "SO", "addressCountry": "IT"},
+        "areaServed": {"@type": "Country", "name": "Italia"},
+        "founder": [{"@type": "Person", "name": "Giuliano Murada", "jobTitle": "Consulenza"}, {"@type": "Person", "name": "Mattia Fumagalli", "jobTitle": "Sviluppo tecnico"}],
+        "knowsAbout": ["Automazione processi aziendali", "Agenti AI", "Intelligenza artificiale per PMI", "Integrazione gestionali", "Automazione fatture"]
+      }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -51,7 +70,7 @@
     "mainEntity": [
       {"@type": "Question", "name": "In quanto tempo è pronta la prima automazione?", "acceptedAnswer": {"@type": "Answer", "text": "Per un singolo processo, come la registrazione delle fatture o lo smistamento delle email, di solito servono dalle 2 alle 4 settimane, test compresi."}},
       {"@type": "Question", "name": "Devo cambiare i programmi che uso?", "acceptedAnswer": {"@type": "Answer", "text": "No. Ci colleghiamo a gestionale, email, Excel, CRM e agli altri strumenti che usate già."}},
-      {"@type": "Question", "name": "I miei dati sono al sicuro?", "acceptedAnswer": {"@type": "Answer", "text": "Lavoriamo nel rispetto del GDPR, con accessi limitati ai soli dati necessari e fornitori con server in Unione Europea quando possibile. Firmiamo un accordo sul trattamento dei dati."}},
+      {"@type": "Question", "name": "I miei dati sono al sicuro?", "acceptedAnswer": {"@type": "Answer", "text": "Lavoriamo nel rispetto del GDPR: accessi limitati ai soli dati necessari, intelligenza artificiale usata tramite servizi professionali che non addestrano i modelli sui vostri dati e un accordo scritto sul trattamento dei dati."}},
       {"@type": "Question", "name": "Lavorate in tutta Italia?", "acceptedAnswer": {"@type": "Answer", "text": "Sì. Lavoriamo da remoto con aziende di tutta Italia e, quando serve, veniamo in sede per l'analisi iniziale."}}
     ]
   }
@@ -270,10 +289,6 @@
             <p>Progetta e costruisce i sistemi AI, li collega ai tuoi strumenti e li tiene aggiornati nel tempo.</p>
           </article>
         </div>
-        <div class="team__social fade">
-          <a href="#" class="chip"><svg class="ic"><use href="#i-insta"/></svg> Seguici su Instagram</a>
-          <a href="#" class="chip"><svg class="ic"><use href="#i-linkedin"/></svg> LinkedIn</a>
-        </div>
       </div>
     </section>
 
@@ -375,7 +390,10 @@
             <h2>Quanto vale un'ora<br>del tuo team? <em>Recuperiamola.</em></h2>
             <p>Prenota una call gratuita di 30 minuti: ci racconti come lavorate e ti diciamo con onestà cosa si può automatizzare e quanto tempo risparmieresti.</p>
           </div>
-          <form class="cta__form" id="lead-form" action="" method="POST" novalidate>
+          <form class="cta__form" id="lead-form" action="https://formsubmit.co/ajax/info@officinaquantica.it" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="FlussAI: richiesta di call gratuita">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
             <div class="row">
               <input name="nome" type="text" placeholder="Nome e cognome" autocomplete="name" required aria-label="Nome e cognome">
               <input name="azienda" type="text" placeholder="Azienda" autocomplete="organization" aria-label="Azienda">
@@ -385,7 +403,7 @@
               <input name="telefono" type="tel" placeholder="Telefono" autocomplete="tel" aria-label="Telefono">
             </div>
             <textarea name="messaggio" rows="3" placeholder="Quale attività vi fa perdere più tempo?" aria-label="Quale attività vi fa perdere più tempo?"></textarea>
-            <label class="consent"><input type="checkbox" name="privacy" required> <span>Acconsento al trattamento dei dati secondo la <a href="#">privacy policy</a>.</span></label>
+            <label class="consent"><input type="checkbox" name="privacy" required> <span>Ho letto l'<a href="/privacy.html">informativa privacy</a> e acconsento a essere ricontattato.</span></label>
             <button type="submit" class="btn btn--white">Prenota la call gratuita <svg class="ic"><use href="#i-arrow"/></svg></button>
             <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
           </form>
@@ -404,7 +422,7 @@
           <details><summary>Posso vedere i progressi durante lo sviluppo?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì. Ti mostriamo il sistema mentre lo costruiamo e raccogliamo i tuoi commenti a ogni passaggio. Niente sorprese alla consegna.</p></details>
           <details><summary>Devo cambiare i programmi che uso?<svg class="ic"><use href="#i-plus"/></svg></summary><p>No. Ci colleghiamo a gestionale, email, Excel, CRM e agli altri strumenti che usate già. Se un programma non permette collegamenti diretti, troviamo comunque un modo per scambiare i dati.</p></details>
           <details><summary>Che tecnologie usate?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Usiamo i modelli di intelligenza artificiale più affidabili sul mercato, insieme a strumenti di automazione e integrazione consolidati. Scegliamo di volta in volta quello che dà il miglior rapporto tra risultato, costo e sicurezza per il tuo caso.</p></details>
-          <details><summary>I miei dati sono al sicuro? E il GDPR?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Lavoriamo nel rispetto del GDPR: accessi limitati ai soli dati necessari, fornitori con server in Unione Europea quando possibile e un accordo scritto sul trattamento dei dati. Le operazioni delicate possono sempre richiedere la tua approvazione.</p></details>
+          <details><summary>I miei dati sono al sicuro? E il GDPR?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Lavoriamo nel rispetto del GDPR: accessi limitati ai soli dati necessari, intelligenza artificiale usata tramite servizi professionali che non addestrano i modelli sui vostri dati e un accordo scritto sul trattamento dei dati. Le operazioni delicate possono sempre richiedere la tua approvazione.</p></details>
           <details><summary>Il sistema resta di mia proprietà?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì, il sistema costruito per la tua azienda è tuo. Ti consegniamo accessi e documentazione, così non dipendi da noi per sempre.</p></details>
           <details><summary>Cosa succede dopo la consegna?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Offriamo assistenza e manutenzione: controlliamo che tutto funzioni, interveniamo se qualcosa cambia nei tuoi programmi e miglioriamo il sistema nel tempo.</p></details>
           <details><summary>Lavorate in tutta Italia?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì. Lavoriamo da remoto con aziende di tutta Italia e, quando serve, veniamo in sede per l'analisi iniziale.</p></details>
@@ -423,13 +441,13 @@
           <p class="footer__claim">Automazione dei processi aziendali con l'AI per le PMI italiane.</p>
         </div>
         <div class="footer__contacts">
-          <p><span>Telefono</span><a href="tel:+390000000000">+39 000 000 0000</a></p>
-          <p><span>Email</span><a href="mailto:ciao@flussai.it">ciao@flussai.it</a></p>
+          <p><span>Telefono</span><a href="tel:+393515073173">+39 351 507 3173</a></p>
+          <p><span>Email</span><a href="mailto:info@officinaquantica.it">info@officinaquantica.it</a></p>
         </div>
       </div>
       <div class="footer__bottom">
-        <p>© <span id="year">2026</span> FlussAI · P. IVA 00000000000</p>
-        <p><a href="#">Privacy Policy</a> · <a href="#">Cookie Policy</a> · <a href="#">Termini di servizio</a></p>
+        <p>© <span id="year">2026</span> FlussAI · Largo Valorsa, 23100 Sondrio · P.IVA IT01009390145</p>
+        <p><a href="/privacy.html">Privacy e cookie</a></p>
       </div>
     </div>
   </footer>
