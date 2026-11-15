@@ -121,7 +121,12 @@
   var closed = false;
   try { closed = sessionStorage.getItem(toastKey) === "1"; } catch (e) {}
   function hideToast() { toast.hidden = true; try { sessionStorage.setItem(toastKey, "1"); } catch (e) {} }
-  if (!closed) setTimeout(function () { toast.hidden = false; }, 9000);
+  /* Aspetta che il banner cookie sia stato chiuso, così i due avvisi non si sovrappongono */
+  function showToast() {
+    if (document.getElementById("cookie-banner")) { setTimeout(showToast, 3000); return; }
+    toast.hidden = false;
+  }
+  if (!closed) setTimeout(showToast, 9000);
   toast.querySelector(".toast__close").addEventListener("click", hideToast);
   toast.querySelector(".toast__go").addEventListener("click", hideToast);
 
