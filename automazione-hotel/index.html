@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automazione per hotel e strutture ricettive con l'AI | FlussAI</title>
+  <meta name="description" content="Risposte alle richieste di disponibilità, assistente per gli ospiti in più lingue, dati del check-in senza ricopiarli, report settimanali. Automazioni AI su misura per hotel, B&B e residence.">
+  <link rel="canonical" href="https://flussai.officinaquantica.it/automazione-hotel/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1D4ED8">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="FlussAI">
+  <meta property="og:title" content="Automazione per hotel e strutture ricettive con l'AI">
+  <meta property="og:description" content="Risposte alle richieste di disponibilità, assistente per gli ospiti in più lingue, dati del check-in senza ricopiarli, report settimanali. Automazioni AI su misura per hotel, B&B e residence.">
+  <meta property="og:url" content="https://flussai.officinaquantica.it/automazione-hotel/">
+  <meta property="og:image" content="https://flussai.officinaquantica.it/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://flussai.officinaquantica.it/og-image.jpg">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://flussai.officinaquantica.it/automazione-hotel/#servizio",
+      "name": "Automazione dei processi per hotel e strutture ricettive",
+      "serviceType": "Automazione dei processi aziendali con l'intelligenza artificiale",
+      "description": "Risposte alle richieste di disponibilità, assistente per gli ospiti in più lingue, dati del check-in senza ricopiarli, report settimanali. Automazioni AI su misura per hotel, B&B e residence.",
+      "url": "https://flussai.officinaquantica.it/automazione-hotel/",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italia"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "name": "Hotel, B&B, residence e strutture ricettive"
+      },
+      "provider": {
+        "@type": [
+          "Organization",
+          "ProfessionalService"
+        ],
+        "@id": "https://flussai.officinaquantica.it/#azienda",
+        "name": "FlussAI",
+        "url": "https://flussai.officinaquantica.it/",
+        "email": "info@officinaquantica.it",
+        "telephone": "+39 351 507 3173",
+        "logo": "https://flussai.officinaquantica.it/icon-512.png"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "FlussAI",
+          "item": "https://flussai.officinaquantica.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hotel e strutture ricettive",
+          "item": "https://flussai.officinaquantica.it/automazione-hotel/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Funziona con il nostro gestionale e il channel manager?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Molti gestionali alberghieri e channel manager permettono collegamenti o esportazioni di dati. Verifichiamo il vostro nell'analisi gratuita e vi diciamo con onestà cosa si può collegare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'assistente risponde in più lingue?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì: italiano, inglese, tedesco, francese e le altre lingue dei vostri ospiti. Prima di metterlo online lo proviamo insieme con le domande che ricevete davvero."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "E se l'assistente non sa la risposta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non inventa: risponde solo con le informazioni che ci date sulla struttura. Se una domanda esce da quelle informazioni, la passa alla reception."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'AI gestisce anche i pagamenti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. L'assistente può indirizzare l'ospite al vostro sistema di prenotazione, ma pagamenti, caparre e rimborsi restano nei sistemi di pagamento e nelle mani dello staff."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Potete chiedere le recensioni solo agli ospiti soddisfatti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, e non lo consigliamo: l'invito a lasciare una recensione parte uguale per tutti, senza filtri e senza incentivi, come prevedono le regole delle piattaforme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I dati degli ospiti sono al sicuro?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lavoriamo nel rispetto del GDPR: accessi limitati ai soli dati necessari, intelligenza artificiale usata tramite servizi professionali che non addestrano i modelli sui vostri dati e un accordo scritto sul trattamento dei dati."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quando conviene partire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In bassa stagione: una prima automazione richiede di solito dalle 2 alle 4 settimane, test compresi, e così è pronta quando arrivano le richieste."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Lavorate in tutta Italia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, lavoriamo da remoto con strutture di tutta Italia e, quando serve, veniamo in sede per l'analisi iniziale."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-sheet" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11.5l2-8H6.2"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="header" id="top">
+    <div class="wrap header__in">
+      <a href="/" class="logo" aria-label="FlussAI, vai alla home">fluss<span class="logo__ai">AI</span></a>
+      <div class="header__actions">
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span class="menu-btn__lines" aria-hidden="true"><i></i><i></i></span> Menu</button>
+        <a href="#prenota" class="btn btn--blue btn--sm">Prenota una call <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="Menu principale" hidden>
+    <div class="wrap menu__in">
+      <a href="#cosa-facciamo">Cosa automatizziamo</a>
+      <a href="#faq">Domande frequenti</a>
+      <a href="/automazione-studi-commercialisti/">Studi commercialisti</a>
+      <a href="/automazione-aziende-manifatturiere/">Aziende manifatturiere</a>
+      <a href="/">Home FlussAI</a>
+      <a href="#prenota" class="menu__cta">Prenota una call gratuita <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero hero--sector">
+      <div class="wrap hero__copy">
+        <p class="crumbs"><a href="/">FlussAI</a> › Hotel e strutture ricettive</p>
+        <p class="hero__kicker"><span class="pulse"></span> Automazione AI per hotel e strutture ricettive</p>
+        <h1>Più tempo per gli ospiti,<br><em>meno</em> per le email.</h1>
+        <p class="hero__lead">Richieste di disponibilità, domande degli ospiti, dati del check-in, recensioni: automazioni AI su misura per hotel, B&B e residence, collegate al gestionale e ai canali che usate già.</p>
+        <div class="hero__ctas">
+          <a href="#prenota" class="btn btn--blue">Prenota una call gratuita <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a href="#cosa-facciamo" class="btn btn--line">Guarda cosa automatizziamo</a>
+        </div>
+        <div class="flow" aria-label="Esempio di automazione">
+          <div class="flow__step"><small>Arriva</small><strong>Richiesta: 2 adulti e 1 bambino, 12-15 agosto</strong></div><span class="flow__arrow"><svg class="ic"><use href="#i-arrow"/></svg></span><div class="flow__step flow__step--ai"><small>FlussAI</small><strong>Controlla disponibilità e tariffe nel gestionale</strong></div><span class="flow__arrow"><svg class="ic"><use href="#i-arrow"/></svg></span><div class="flow__step flow__step--ok"><small>Pronto</small><strong>Preventivo in bozza, da inviare con un clic</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blue">
+      <div class="blue__grid" aria-hidden="true"></div>
+      <div class="wrap blue__in">
+        <div class="pb">
+          <div class="pb__col fade">
+            <h2 class="pb__title">Il <em>problema</em></h2>
+            <ul class="pb__list">
+              <li><svg class="ic"><use href="#i-x"/></svg> Le stesse domande ogni giorno: parcheggio, animali, orari</li>
+              <li><svg class="ic"><use href="#i-x"/></svg> Preventivi scritti a mano per ogni richiesta</li>
+              <li><svg class="ic"><use href="#i-x"/></svg> Dati degli ospiti ricopiati tra un programma e l'altro</li>
+              <li><svg class="ic"><use href="#i-x"/></svg> Recensioni che restano senza risposta</li>
+            </ul>
+          </div>
+          <div class="pb__col fade">
+            <h2 class="pb__title">La <em>soluzione</em></h2>
+            <p>Un sistema AI che risponde alle domande di routine, prepara i preventivi leggendo disponibilità e tariffe e sposta i dati degli ospiti dove servono.</p>
+            <p>La reception riceve solo le richieste che hanno davvero bisogno di una persona.</p>
+          </div>
+        </div>
+        <div class="integr fade" style="margin-bottom:0">
+          <p class="integr__q"><em>Con cosa?</em></p>
+          <h2 class="integr__title">Con quello che usate già</h2>
+          <ul class="integr__list">
+            <li><svg class="ic"><use href="#i-db"/></svg> Gestionale (PMS)</li>
+            <li><svg class="ic"><use href="#i-cal"/></svg> Channel manager</li>
+            <li><svg class="ic"><use href="#i-cart"/></svg> Booking engine</li>
+            <li><svg class="ic"><use href="#i-mail"/></svg> Email</li>
+            <li><svg class="ic"><use href="#i-chat"/></svg> WhatsApp</li>
+            <li><svg class="ic"><use href="#i-sheet"/></svg> Excel</li>
+            <li><svg class="ic"><use href="#i-star"/></svg> Recensioni online</li>
+            <li><svg class="ic"><use href="#i-file"/></svg> Moduli e documenti</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cases" id="cosa-facciamo">
+      <div class="wrap">
+        <h2 class="big-title fade">Cosa automatizziamo <em>in struttura</em></h2>
+        <p class="sub fade">Alcuni esempi. Ogni realtà lavora a modo suo: partiamo sempre da come lavorate voi, un processo alla volta.</p>
+        <div class="cases__grid">
+          <article class="case fade">
+            <div class="case__vis case__vis--mail"><div class="mail-tag a">Disponibilità</div><div class="mail-tag b">Gruppi</div><div class="mail-tag c">Modifiche</div><div class="mail-tag d">Spam</div></div>
+            <span class="case__cat">Prenotazioni</span>
+            <h3>Risposte alle richieste di disponibilità</h3>
+            <p>L'AI legge la richiesta, controlla disponibilità e tariffe e prepara la risposta con il preventivo. La inviate voi, oppure parte da sola per i casi standard che scegliete.</p>
+          </article>
+          <article class="case fade">
+            <div class="case__vis case__vis--chat"><div class="bubble bubble--in sm">Is there parking at the hotel?</div><div class="bubble bubble--out sm">Yes! Free private parking, no booking needed 🚗</div></div>
+            <span class="case__cat">Ospiti</span>
+            <h3>Un assistente in più lingue</h3>
+            <p>Su WhatsApp o sul sito risponde giorno e notte alle domande frequenti, in italiano, inglese, tedesco e altre lingue. Le richieste particolari passano alla reception.</p>
+          </article>
+          <article class="case fade">
+            <div class="case__vis case__vis--inv"><div class="mini-row"><b>DOC</b><span></span><em>✓</em></div><div class="mini-row"><b>DOC</b><span></span><em>✓</em></div><div class="mini-row"><b>DOC</b><span></span><em>✓</em></div></div>
+            <span class="case__cat">Check-in</span>
+            <h3>Dati degli ospiti senza ricopiarli</h3>
+            <p>Un modulo pre-arrivo raccoglie i dati e li porta nel gestionale. Comunicazioni alle autorità e imposta di soggiorno restano a voi, con i dati già pronti da controllare.</p>
+          </article>
+          <article class="case fade">
+            <div class="case__vis case__vis--rep"><div class="bars"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:80%"></i><i style="--h:72%"></i><i style="--h:95%"></i></div></div>
+            <span class="case__cat">Direzione</span>
+            <h3>Report e recensioni</h3>
+            <p>Ogni settimana occupazione, provenienza degli ospiti e recensioni nuove, con una bozza di risposta per ciascuna da approvare.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="keep" style="padding-top:0">
+      <div class="wrap">
+        <h2 class="big-title fade">Cosa resta <em>a voi</em></h2>
+        <p class="sub fade">L'automazione toglie il lavoro ripetitivo, non le decisioni. Su invii, pagamenti e casi delicati c'è sempre una persona.</p>
+        <div class="keep__grid">
+          <div class="keep__item fade"><svg class="ic"><use href="#i-user"/></svg><div><strong>L'accoglienza</strong><p>Il contatto con l'ospite in struttura, i consigli e le attenzioni restano alle persone.</p></div></div>
+          <div class="keep__item fade"><svg class="ic"><use href="#i-user"/></svg><div><strong>Tariffe e politiche</strong><p>Prezzi, offerte e condizioni di cancellazione li decidete voi: il sistema li applica, non li cambia.</p></div></div>
+          <div class="keep__item fade"><svg class="ic"><use href="#i-user"/></svg><div><strong>Allergie ed esigenze particolari</strong><p>Richieste su allergie, salute o accessibilità vengono sempre passate a una persona dello staff.</p></div></div>
+          <div class="keep__item fade"><svg class="ic"><use href="#i-user"/></svg><div><strong>Invii obbligatori e recensioni</strong><p>Le comunicazioni alle autorità le inviate voi; le risposte alle recensioni sono bozze che approvate prima della pubblicazione.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method" style="padding-bottom:110px">
+      <div class="wrap">
+        <h2 class="big-title fade">Come si <em>parte</em></h2>
+        <p class="sub fade">Nessun impegno finché non avete una proposta chiara in mano.</p>
+        <ol class="steps3">
+          <li class="fade"><strong>Call gratuita di 30 minuti</strong><p>Ci raccontate come lavorate e quali attività vi rubano più tempo.</p></li>
+          <li class="fade"><strong>Analisi e proposta</strong><p>Guardiamo il processo con chi lo svolge e vi diamo cosa automatizzare, tempi e costi.</p></li>
+          <li class="fade"><strong>Costruzione e prova</strong><p>Sviluppiamo, colleghiamo ai vostri strumenti e testiamo su casi reali prima di accenderlo.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-sec" id="prenota">
+      <div class="wrap">
+        <div class="cta">
+          <div class="blue__grid" aria-hidden="true"></div>
+          <div class="cta__copy">
+            <h2>Quante email uguali<br>al giorno? <em>Rispondiamo noi.</em></h2>
+            <p>Prenota una call gratuita di 30 minuti: ci racconti come lavorate e ti diciamo con onestà cosa si può automatizzare e quanto tempo risparmieresti.</p>
+          </div>
+          <form class="cta__form" id="lead-form" action="https://formsubmit.co/ajax/info@officinaquantica.it" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="FlussAI (Hotel e strutture ricettive): richiesta di call gratuita">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="pagina" value="Hotel e strutture ricettive">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
+            <div class="row">
+              <input name="nome" type="text" placeholder="Nome e cognome" autocomplete="name" required aria-label="Nome e cognome">
+              <input name="azienda" type="text" placeholder="Azienda" autocomplete="organization" aria-label="Azienda">
+            </div>
+            <div class="row">
+              <input name="email" type="email" placeholder="Email" autocomplete="email" required aria-label="Email">
+              <input name="telefono" type="tel" placeholder="Telefono" autocomplete="tel" aria-label="Telefono">
+            </div>
+            <textarea name="messaggio" rows="3" placeholder="Quale attività vi toglie più tempo agli ospiti?" aria-label="Quale attività vi toglie più tempo agli ospiti?"></textarea>
+            <label class="consent"><input type="checkbox" name="privacy" required> <span>Ho letto l'<a href="/privacy.html">informativa privacy</a> e acconsento a essere ricontattato.</span></label>
+            <button type="submit" class="btn btn--white">Prenota la call gratuita <svg class="ic"><use href="#i-arrow"/></svg></button>
+            <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap wrap--narrow">
+        <h2 class="big-title fade">Domande <em>frequenti</em></h2>
+        <p class="sub fade">Non trovi la tua domanda? Chiedicela in call, la prima è gratuita.</p>
+        <div class="faq__list fade">
+          <details><summary>Funziona con il nostro gestionale e il channel manager?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Molti gestionali alberghieri e channel manager permettono collegamenti o esportazioni di dati. Verifichiamo il vostro nell'analisi gratuita e vi diciamo con onestà cosa si può collegare.</p></details>
+          <details><summary>L'assistente risponde in più lingue?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì: italiano, inglese, tedesco, francese e le altre lingue dei vostri ospiti. Prima di metterlo online lo proviamo insieme con le domande che ricevete davvero.</p></details>
+          <details><summary>E se l'assistente non sa la risposta?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Non inventa: risponde solo con le informazioni che ci date sulla struttura. Se una domanda esce da quelle informazioni, la passa alla reception.</p></details>
+          <details><summary>L'AI gestisce anche i pagamenti?<svg class="ic"><use href="#i-plus"/></svg></summary><p>No. L'assistente può indirizzare l'ospite al vostro sistema di prenotazione, ma pagamenti, caparre e rimborsi restano nei sistemi di pagamento e nelle mani dello staff.</p></details>
+          <details><summary>Potete chiedere le recensioni solo agli ospiti soddisfatti?<svg class="ic"><use href="#i-plus"/></svg></summary><p>No, e non lo consigliamo: l'invito a lasciare una recensione parte uguale per tutti, senza filtri e senza incentivi, come prevedono le regole delle piattaforme.</p></details>
+          <details><summary>I dati degli ospiti sono al sicuro?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Lavoriamo nel rispetto del GDPR: accessi limitati ai soli dati necessari, intelligenza artificiale usata tramite servizi professionali che non addestrano i modelli sui vostri dati e un accordo scritto sul trattamento dei dati.</p></details>
+          <details><summary>Quando conviene partire?<svg class="ic"><use href="#i-plus"/></svg></summary><p>In bassa stagione: una prima automazione richiede di solito dalle 2 alle 4 settimane, test compresi, e così è pronta quando arrivano le richieste.</p></details>
+          <details><summary>Lavorate in tutta Italia?<svg class="ic"><use href="#i-plus"/></svg></summary><p>Sì, lavoriamo da remoto con strutture di tutta Italia e, quando serve, veniamo in sede per l'analisi iniziale.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectors">
+      <div class="wrap">
+        <div class="sectors__grid">
+          <a class="sector-card fade" href="/automazione-studi-commercialisti/"><span class="case__cat">Altro settore</span><strong>Studi commercialisti</strong><p>Raccolta documenti, pre-registrazioni, solleciti ai clienti.</p><span class="go">Scopri <svg class="ic"><use href="#i-arrow"/></svg></span></a>
+          <a class="sector-card fade" href="/automazione-aziende-manifatturiere/"><span class="case__cat">Altro settore</span><strong>Aziende manifatturiere</strong><p>Per aziende di produzione, officine meccaniche e terzisti.</p><span class="go">Scopri <svg class="ic"><use href="#i-arrow"/></svg></span></a>
+          <a class="sector-card fade" href="/"><span class="case__cat">FlussAI</span><strong>Tutte le automazioni</strong><p>Email, fatture, documenti, Excel e gestionali per ogni tipo di PMI.</p><span class="go">Vai alla home <svg class="ic"><use href="#i-arrow"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__big">Lascia che il lavoro <em>scorra.</em></p>
+      <div class="footer__row">
+        <div>
+          <a href="/" class="logo logo--light">fluss<span class="logo__ai">AI</span></a>
+          <p class="footer__claim">Automazione dei processi aziendali con l'AI per le PMI italiane.</p>
+        </div>
+        <div class="footer__contacts">
+          <p><span>Telefono</span><a href="tel:+393515073173">+39 351 507 3173</a></p>
+          <p><span>Email</span><a href="mailto:info@officinaquantica.it">info@officinaquantica.it</a></p>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Settori"><a href="/automazione-studi-commercialisti/">Studi commercialisti</a> <a href="/automazione-aziende-manifatturiere/">Aziende manifatturiere</a> <a href="/automazione-hotel/">Hotel e strutture ricettive</a></nav>
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> FlussAI · Largo Valorsa, 23100 Sondrio · P.IVA IT01009390145</p>
+        <p><a href="/privacy.html">Privacy e cookie</a> · <a href="#" data-cookie-prefs>Preferenze cookie</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/main.js" defer></script>
+  <script src="/cookie-consent.js" defer></script>
+</body>
+</html>

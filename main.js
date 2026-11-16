@@ -102,6 +102,7 @@
   var prev = document.querySelector('.round[data-dir="-1"]');
   var next = document.querySelector('.round[data-dir="1"]');
   var current = 0;
+  if (tabs.length && bar && prev && next) {
   function go(i) {
     current = Math.max(0, Math.min(tabs.length - 1, i));
     tabs.forEach(function (t, k) { t.setAttribute("aria-selected", String(k === current)); });
@@ -114,9 +115,11 @@
   prev.addEventListener("click", function () { go(current - 1); });
   next.addEventListener("click", function () { go(current + 1); });
   go(0);
+  }
 
   /* Notifica */
   var toast = document.getElementById("toast");
+  if (toast) {
   var toastKey = "flussa-toast-closed";
   var closed = false;
   try { closed = sessionStorage.getItem(toastKey) === "1"; } catch (e) {}
@@ -129,11 +132,13 @@
   if (!closed) setTimeout(showToast, 9000);
   toast.querySelector(".toast__close").addEventListener("click", hideToast);
   toast.querySelector(".toast__go").addEventListener("click", hideToast);
+  }
 
   /* Modulo: invio tramite l'endpoint indicato in action; senza endpoint si apre il client email. */
   var form = document.getElementById("lead-form");
   var msg = document.getElementById("form-msg");
   var EMAIL = "info@officinaquantica.it";
+  if (form) {
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var ok = true;
@@ -161,6 +166,8 @@
   form.querySelectorAll("input, textarea").forEach(function (el) {
     el.addEventListener("input", function () { (el.type === "checkbox" ? el.parentElement : el).classList.remove("invalid"); });
   });
+  }
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 })();
